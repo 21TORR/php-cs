@@ -7,9 +7,13 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            -   uses: actions/checkout@v2
-            -   uses: php-actions/composer@v1
-            -   name: Install global dependencies
+            -   name: Checkout Code
+                uses: actions/checkout@v2
+
+            -   name: Install Composer
+                uses: php-actions/composer@v1
+
+            -   name: Composer Normalize
                 uses: "docker://ergebnis/composer-normalize-action:latest"
                 with:
                     args: "--indent-size 4 --indent-style space --dry-run"
