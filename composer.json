@@ -1,0 +1,29 @@
+{
+  "name": "21torr/php-cs",
+  "type": "lib",
+  "description": "Code style, encoded as rules for common tools.",
+  "homepage": "https://github.com/21TORR/php-cs",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "21TORR",
+      "homepage": "https://www.21torr.com/"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "friendsofphp/php-cs-fixer": "^v2.16.4",
+    "psalm/plugin-phpunit": "^0.12.1",
+    "psalm/plugin-symfony": "^1.4",
+    "vimeo/psalm": "^3.15",
+    "weirdan/doctrine-psalm-plugin": "^0.11.3"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
