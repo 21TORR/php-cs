@@ -17,7 +17,7 @@ After installation, you can run the tools like this:
 
 ```bash
 ./vendor/bin/php-cs-fixer fix --dry-run --diff --config vendor-bin/test/vendor/21torr/php-cs/.php_cs.dist
-./vendor/bin/psalm --threads=8 -c vendor-bin/test/vendor/21torr/php-cs/psalm.xml
+./vendor/bin/psalm --threads=8 -c vendor-bin/test/vendor/21torr/php-cs/psalm/symfony.xml
 ```
 
 For [composer normalize], you can just install the plugin globally and run it.
