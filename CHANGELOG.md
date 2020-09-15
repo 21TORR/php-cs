@@ -1,3 +1,9 @@
+1.0.2
+=====
+
+*   (improvement) Ignore `UnusedClass` for libraries.
+
+
 1.0.1
 =====
 

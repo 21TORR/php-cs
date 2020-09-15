@@ -9,6 +9,7 @@
 >
     <issueHandlers>
         <UnresolvableInclude errorLevel="suppress" />
+        <UnusedClass errorLevel="suppress" />
     </issueHandlers>
 
     <projectFiles>
