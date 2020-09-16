@@ -31,13 +31,13 @@ After installation, you can run the tools like this:
 
 ```bash
 ./vendor/bin/php-cs-fixer fix --dry-run --diff --config vendor-bin/test/vendor/21torr/php-cs/.php_cs.dist
-./vendor/bin/phpstan -c vendor-bin/test/vendor/21torr/php-cs/phpstan/lib.neon
+./vendor/bin/phpstan analyze -c vendor-bin/test/vendor/21torr/php-cs/phpstan/lib.neon .
 ```
 
 In a project (instead of a lib) you should use
 
 ```bash
-./vendor/bin/phpstan -c vendor-bin/test/vendor/21torr/php-cs/phpstan/symfony.neon
+./vendor/bin/phpstan analyze -c vendor-bin/test/vendor/21torr/php-cs/phpstan/symfony.neon .
 ```
 
 For [composer normalize], you can just install the plugin globally and run it.
