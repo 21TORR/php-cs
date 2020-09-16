@@ -4,7 +4,13 @@ Code Style for PHP
 Installation
 ------------
 
-You should install this package using the [composer-bin-plugin]:
+You should install this package using the [composer-bin-plugin]. So first add the composer plugin:
+
+```bash
+composer req --dev bamarni/composer-bin-plugin
+```
+
+Then install this package:
 
 ```bash
 composer bin test require --dev 21torr/php-cs
