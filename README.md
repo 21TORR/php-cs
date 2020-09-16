@@ -10,6 +10,19 @@ You should install this package using the [composer-bin-plugin]:
 composer bin test require --dev 21torr/php-cs
 ```
 
+Afterwards add the following scripts to your `composer.json`, to always and automatically keep these dependencies up to date:
+
+```json
+"scripts": {
+    "post-install-cmd": [
+        "@composer bin all install --ansi"
+    ],
+    "post-update-cmd": [
+        "@composer bin all update --ansi"
+    ]
+}
+```
+
 Usage
 -----
 
