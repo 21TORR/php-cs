@@ -14,10 +14,9 @@
         "php": "^7.4",
         "ext-json": "*",
         "friendsofphp/php-cs-fixer": "^v2.16.4",
-        "psalm/plugin-phpunit": "^0.12.1",
-        "psalm/plugin-symfony": "^1.4",
-        "vimeo/psalm": "^3.15",
-        "weirdan/doctrine-psalm-plugin": "^0.11.3"
+        "phpstan/phpstan": "^0.12.42",
+        "phpstan/phpstan-doctrine": "^0.12.19",
+        "phpstan/phpstan-symfony": "^0.12.7"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"

@@ -1,0 +1,25 @@
+includes:
+    - ../../../phpstan/phpstan-doctrine/extension.neon
+
+parameters:
+    level: 5
+
+    checkUninitializedProperties: true
+    inferPrivatePropertyTypeFromConstructor: true
+    reportUnmatchedIgnoredErrors: false
+    treatPhpDocTypesAsCertain: false
+
+    excludes_analyse:
+        - %currentWorkingDirectory%/app/DoctrineMigrations
+        - %currentWorkingDirectory%/node_modules
+        - %currentWorkingDirectory%/src/Migrations
+        - %currentWorkingDirectory%/tests
+        - %currentWorkingDirectory%/var
+        - %currentWorkingDirectory%/vendor
+        - %currentWorkingDirectory%/vendor-bin
+
+    ignoreErrors:
+        - '#Symfony\\Component\\Config\\Definition\\Builder\\NodeDefinition::#'
+        - '#Symfony\\Component\\Config\\Definition\\Builder\\NodeParentInterface::#'
+        - '#\(Doctrine\\ORM\\EntityManager\) does not accept Doctrine\\Common\\Persistence\\ObjectManager#'
+        - '#\(Doctrine\\ORM\\EntityManager\) does not accept Doctrine\\Persistence\\ObjectManager#'
