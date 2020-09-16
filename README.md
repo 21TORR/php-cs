@@ -4,15 +4,10 @@ Code Style for PHP
 Installation
 ------------
 
-You should install this package using the [composer-bin-plugin]. So first add the composer plugin:
+You should install this package using the [composer-bin-plugin]. So first add the composer plugin, then install this bundle:
 
 ```bash
 composer req --dev bamarni/composer-bin-plugin
-```
-
-Then install this package:
-
-```bash
 composer bin test require --dev 21torr/php-cs
 ```
 
@@ -36,7 +31,13 @@ After installation, you can run the tools like this:
 
 ```bash
 ./vendor/bin/php-cs-fixer fix --dry-run --diff --config vendor-bin/test/vendor/21torr/php-cs/.php_cs.dist
-./vendor/bin/psalm --threads=8 -c vendor-bin/test/vendor/21torr/php-cs/psalm/symfony.xml
+./vendor/bin/phpstan -c vendor-bin/test/vendor/21torr/php-cs/phpstan/lib.neon
+```
+
+In a project (instead of a lib) you should use
+
+```bash
+./vendor/bin/phpstan -c vendor-bin/test/vendor/21torr/php-cs/phpstan/symfony.neon
 ```
 
 For [composer normalize], you can just install the plugin globally and run it.

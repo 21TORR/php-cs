@@ -1,3 +1,9 @@
+2.0.0
+=====
+
+*   (bc) Use PhpStan instead of Psalm.
+
+
 1.0.2
 =====
 
