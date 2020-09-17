@@ -1,27 +1,27 @@
 {
-    "name": "21torr/php-cs",
-    "type": "lib",
-    "description": "Code style, encoded as rules for common tools.",
-    "homepage": "https://github.com/21TORR/php-cs",
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "21TORR",
-            "homepage": "https://www.21torr.com/"
-        }
-    ],
-    "require": {
-        "php": "^7.4",
-        "ext-json": "*",
-        "friendsofphp/php-cs-fixer": "^v2.16.4",
-        "phpstan/phpstan": "^0.12.42",
-        "phpstan/phpstan-doctrine": "^0.12.19",
-        "phpstan/phpstan-symfony": "^0.12.7"
-    },
-    "require-dev": {
-        "roave/security-advisories": "dev-master"
-    },
-    "config": {
-        "sort-packages": true
-    }
+	"name": "21torr/php-cs",
+	"type": "lib",
+	"description": "Code style, encoded as rules for common tools.",
+	"homepage": "https://github.com/21TORR/php-cs",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "21TORR",
+			"homepage": "https://www.21torr.com/"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"ext-json": "*",
+		"friendsofphp/php-cs-fixer": "^v2.16.4",
+		"phpstan/phpstan": "^0.12.42",
+		"phpstan/phpstan-doctrine": "^0.12.19",
+		"phpstan/phpstan-symfony": "^0.12.7"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-master"
+	},
+	"config": {
+		"sort-packages": true
+	}
 }
