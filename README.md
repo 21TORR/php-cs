@@ -43,5 +43,11 @@ In a project (instead of a lib) you should use
 For [composer normalize], you can just install the plugin globally and run it.
 
 
+Editor Config
+-------------
+
+This library also includes the default `.editorconfig`. Just symlink this file to your project root.
+
+
 [composer-bin-plugin]: https://github.com/bamarni/composer-bin-plugin
 [composer normalize]: https://packagist.org/packages/ergebnis/composer-normalize
