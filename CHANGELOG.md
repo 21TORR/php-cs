@@ -1,3 +1,9 @@
+2.0.2
+=====
+
+*   (improvement) Also run PHP CS Fixer in the `tests/` directory.
+
+
 2.0.1
 =====
 
