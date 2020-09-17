@@ -16,4 +16,4 @@ jobs:
             -   name: Composer Normalize
                 uses: "docker://ergebnis/composer-normalize-action:latest"
                 with:
-                    args: "--indent-size 4 --indent-style space --dry-run"
+                    args: "--indent-style tab --indent-size 1 --dry-run"
