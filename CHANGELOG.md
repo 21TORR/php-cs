@@ -1,3 +1,9 @@
+2.0.4
+=====
+
+*   (improvement) Disable `checkMissingIterableValueType` in PhpStan.
+
+
 2.0.3
 =====
 
