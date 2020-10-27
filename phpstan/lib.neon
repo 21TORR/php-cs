@@ -9,6 +9,7 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     treatPhpDocTypesAsCertain: false
     checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
 
     excludes_analyse:
         - %currentWorkingDirectory%/app/DoctrineMigrations
