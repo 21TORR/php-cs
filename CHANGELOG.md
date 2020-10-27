@@ -1,3 +1,9 @@
+2.0.5
+=====
+
+*   (improvement) Disable `checkGenericClassInNonGenericObjectType:` in PhpStan.
+
+
 2.0.4
 =====
 
