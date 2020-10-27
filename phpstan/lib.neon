@@ -8,6 +8,7 @@ parameters:
     inferPrivatePropertyTypeFromConstructor: true
     reportUnmatchedIgnoredErrors: false
     treatPhpDocTypesAsCertain: false
+    checkMissingIterableValueType: false
 
     excludes_analyse:
         - %currentWorkingDirectory%/app/DoctrineMigrations
