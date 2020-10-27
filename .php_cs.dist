@@ -57,7 +57,6 @@ return PhpCsFixer\Config::create()
 					"switch",
 					"try",
 					"while",
-					"yield",
 				],
 			],
 			// disabled, as this forces the brace on the same line, if the method arguments are over multiple lines (to be compatible with PSR-2)

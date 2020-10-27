@@ -1,3 +1,9 @@
+2.0.3
+=====
+
+*   (improvement) Don't force blank line before `yield`.
+
+
 2.0.2
 =====
 
