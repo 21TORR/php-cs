@@ -1,3 +1,9 @@
+2.0.8
+=====
+
+*   (improvement) Add "custom" as directory for PHP-CS-Fixer.
+
+
 2.0.7
 =====
 
