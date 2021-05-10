@@ -13,6 +13,7 @@
 	"require": {
 		"php": "^7.2 || ^8.0",
 		"ext-json": "*",
+		"ergebnis/composer-normalize": "^2.13",
 		"friendsofphp/php-cs-fixer": "^v2.16.4",
 		"phpstan/phpstan": "^0.12.42",
 		"phpstan/phpstan-doctrine": "^0.12.19",
