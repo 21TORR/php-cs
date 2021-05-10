@@ -1,3 +1,9 @@
+2.0.9
+=====
+
+*   (improvement) Directly include `composer-normalize` in this package.
+
+
 2.0.8
 =====
 
