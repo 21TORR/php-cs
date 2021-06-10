@@ -38,4 +38,4 @@ jobs:
                 run: composer-normalize --indent-style tab --indent-size 1 --dry-run --ansi
 
             -   name: Check PHP-CS-Fixer Config
-                run: mkdir src && ./vendor/bin/php-cs-fixer fix --diff --config .php_cs.dist.php --dry-run --no-interaction
+                run: mkdir src && ./vendor/bin/php-cs-fixer fix --diff --config .php-cs-fixer.dist.php --dry-run --no-interaction

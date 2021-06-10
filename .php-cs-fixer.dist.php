@@ -76,8 +76,9 @@ return $config
 			// Disabled, as we can't configure *2* blank lines to separate
 			// see https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/4001
 //        "class_attributes_separation" => [
-//            "elements" => ["method", "property"],
+//            "elements" => true,
 //        ],
+			"class_attributes_separation" => true,
 			"class_definition" => true,
 			"combine_consecutive_issets" => true,
 			"combine_consecutive_unsets" => true,
@@ -86,7 +87,9 @@ return $config
 			"concat_space" => [
 				"spacing" => "one",
 			],
-			"constant_case" => true,
+			"constant_case" => [
+				"case" => "lower",
+			],
 			"declare_equal_normalize" => [
 				"space" => "none",
 			],
@@ -105,7 +108,6 @@ return $config
 			"explicit_indirect_variable" => true,
 			"explicit_string_variable" => true,
 			"final_internal_class" => true,
-			"final_static_access" => true,
 			"full_opening_tag" => true,
 			"fully_qualified_strict_types" => true,
 			"function_to_constant" => true,
@@ -127,7 +129,6 @@ return $config
 			],
 			"logical_operators" => true,
 			"lowercase_cast" => true,
-			"lowercase_constants" => true,
 			"lowercase_keywords" => true,
 			"lowercase_static_reference" => true,
 			"magic_constant_casing" => true,
@@ -191,6 +192,7 @@ return $config
 			"ordered_imports" => true,
 			"php_unit_construct" => true,
 			"php_unit_dedicate_assert" => true,
+			"php_unit_dedicate_assert_internal_type" => true,
 			"php_unit_expectation" => true,
 			"php_unit_fqcn_annotation" => true,
 			"php_unit_internal_class" => true,
@@ -198,7 +200,6 @@ return $config
 			"php_unit_mock" => true,
 			"php_unit_namespaced" => true,
 			"php_unit_no_expectation_annotation" => true,
-			"php_unit_ordered_covers" => true,
 			"php_unit_set_up_tear_down_visibility" => true,
 			"php_unit_strict" => true,
 			"php_unit_test_case_static_method_calls" => [
@@ -212,6 +213,7 @@ return $config
 			"phpdoc_no_package" => true,
 			"phpdoc_no_useless_inheritdoc" => true,
 			"phpdoc_order" => true,
+			"phpdoc_order_by_value" => true,
 			"phpdoc_return_self_reference" => true,
 			"phpdoc_scalar" => true,
 			"phpdoc_separation" => true,
@@ -226,7 +228,7 @@ return $config
 			"phpdoc_var_without_name" => true,
 			"pow_to_exponentiation" => true,
 			"protected_to_private" => true,
-			"psr4" => true,
+			"psr_autoloading" => true,
 			"random_api_migration" => true,
 			"return_type_declaration" => [
 				"space_before" => "one",
@@ -254,7 +256,10 @@ return $config
 			"switch_case_space" => true,
 			"ternary_operator_spaces" => true,
 			"ternary_to_null_coalescing" => true,
-			"trailing_comma_in_multiline_array" => true,
+			"trailing_comma_in_multiline" => [
+				"after_heredoc" => true,
+				"elements" => ['arrays', 'arguments', 'parameters'],
+			],
 			"trim_array_spaces" => true,
 			"unary_operator_spaces" => true,
 			"visibility_required" => true,
