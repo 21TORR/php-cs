@@ -1,3 +1,9 @@
+2.1.0
+=====
+
+*   (feature) Update packages + add `phpstan-strict-rules` and `phpstan-deprecation-rules` extensions.
+
+
 2.0.9
 =====
 
