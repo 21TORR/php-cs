@@ -1,3 +1,10 @@
+4.0.0
+=====
+
+*	(bc) Bump to PHP-CS-Fixer v3.
+*	(improvement) Bump required minimum PHP version to 8.0
+
+
 3.0.1
 =====
 
