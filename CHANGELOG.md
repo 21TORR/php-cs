@@ -1,4 +1,4 @@
-2.1.0
+2.1.0 (unreleased)
 =====
 
 *   (feature) Update packages + add `phpstan-strict-rules` and `phpstan-deprecation-rules` extensions.
