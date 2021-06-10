@@ -1,3 +1,9 @@
+4.0.1
+=====
+
+*	(bug) Fix accidentally activated rules
+
+
 4.0.0
 =====
 
