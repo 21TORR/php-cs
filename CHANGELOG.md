@@ -1,7 +1,14 @@
+3.0.1
+=====
+
+*	(improvement) Fix deprecations in PHP-CS-Fixer
+*	(improvement) Keep using the `test` vendor bin directory for the main installation
+
+
 3.0.0
 =====
 
-*   (feature) Update packages + add `phpstan-strict-rules` and `phpstan-deprecation-rules` extensions.
+*	(feature) Update packages + add `phpstan-strict-rules` and `phpstan-deprecation-rules` extensions.
 *	(bc) PHP-CS-Fixer must now be installed separately.
 *	(internal) Validate PHP-CS-Fixer config in CI.
 

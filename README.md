@@ -8,7 +8,7 @@ You should install this package using the [composer-bin-plugin]. So first add th
 
 ```bash
 composer req --dev bamarni/composer-bin-plugin
-composer bin phpstan require --dev 21torr/php-cs
+composer bin test require --dev 21torr/php-cs
 composer bin cs-fixer require --dev friendsofphp/php-cs-fixer
 ```
 
