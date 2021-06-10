@@ -1,7 +1,9 @@
-2.1.0
+3.0.0
 =====
 
 *   (feature) Update packages + add `phpstan-strict-rules` and `phpstan-deprecation-rules` extensions.
+*	(bc) PHP-CS-Fixer must now be installed separately.
+*	(internal) Validate PHP-CS-Fixer config in CI.
 
 
 2.0.9
