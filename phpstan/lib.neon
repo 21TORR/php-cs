@@ -1,6 +1,3 @@
-includes:
-    - ../../../phpstan/phpstan-doctrine/extension.neon
-
 parameters:
     level: 5
 

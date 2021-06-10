@@ -13,14 +13,17 @@
 	"require": {
 		"php": "^7.2 || ^8.0",
 		"ext-json": "*",
-		"ergebnis/composer-normalize": "^2.13",
-		"friendsofphp/php-cs-fixer": "^v2.16.4",
-		"phpstan/phpstan": "^0.12.42",
-		"phpstan/phpstan-doctrine": "^0.12.19",
-		"phpstan/phpstan-symfony": "^0.12.7"
+		"ergebnis/composer-normalize": "^2.14.0",
+		"friendsofphp/php-cs-fixer": "^v2.16.10",
+		"phpstan/extension-installer": "^1.1.0",
+		"phpstan/phpstan": "^0.12.89",
+		"phpstan/phpstan-deprecation-rules": "^0.12.6",
+		"phpstan/phpstan-doctrine": "^0.12.38",
+		"phpstan/phpstan-strict-rules": "^0.12.9",
+		"phpstan/phpstan-symfony": "^0.12.35"
 	},
 	"require-dev": {
-		"roave/security-advisories": "dev-master"
+		"roave/security-advisories": "dev-latest"
 	},
 	"config": {
 		"sort-packages": true
