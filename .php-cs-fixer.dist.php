@@ -64,21 +64,20 @@ return $config
 			],
 			// disabled, as this forces the brace on the same line, if the method arguments are over multiple lines (to be compatible with PSR-2)
 			// see https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/3637#issuecomment-409987422
-//        "braces" => [
-//            "allow_single_line_closure" => true,
-//            "position_after_anonymous_constructs" => "next",
-//            "position_after_control_structures" => "next",
-//            "position_after_functions_and_oop_constructs" => "next",
-//        ],
+//			"braces" => [
+//				"allow_single_line_closure" => true,
+//				"position_after_anonymous_constructs" => "next",
+//				"position_after_control_structures" => "next",
+//				"position_after_functions_and_oop_constructs" => "next",
+//			],
 			"cast_spaces" => [
 				"space" => "single",
 			],
 			// Disabled, as we can't configure *2* blank lines to separate
 			// see https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/4001
-//        "class_attributes_separation" => [
-//            "elements" => true,
-//        ],
-			"class_attributes_separation" => true,
+//			"class_attributes_separation" => [
+//				"elements" => true,
+//			],
 			"class_definition" => true,
 			"combine_consecutive_issets" => true,
 			"combine_consecutive_unsets" => true,
@@ -142,7 +141,9 @@ return $config
 			"multiline_whitespace_before_semicolons" => true,
 			"native_constant_invocation" => true,
 			"native_function_casing" => true,
-			"native_function_invocation" => true,
+			"native_function_invocation" => [
+				"strict" => false,
+			],
 			"native_function_type_declaration_casing" => true,
 			"new_with_braces" => true,
 			"no_alias_functions" => [
