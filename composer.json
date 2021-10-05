@@ -18,7 +18,6 @@
 		"phpstan/phpstan": "^0.12.89",
 		"phpstan/phpstan-deprecation-rules": "^0.12.6",
 		"phpstan/phpstan-doctrine": "^0.12.38",
-		"phpstan/phpstan-strict-rules": "^0.12.9",
 		"phpstan/phpstan-symfony": "^0.12.35"
 	},
 	"require-dev": {

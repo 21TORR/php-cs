@@ -1,3 +1,9 @@
+4.0.2
+=====
+
+*	(improvement) Don't use overly strict rules.
+
+
 4.0.1
 =====
 
