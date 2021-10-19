@@ -25,6 +25,14 @@ Afterwards add the following scripts to your `composer.json`, to always and auto
 }
 ```
 
+Now you should ignore the nested vendor directories in your `.gitignore`:
+
+```
+/vendor-bin/*/composer.lock
+/vendor-bin/*/vendor
+```
+
+
 Usage
 -----
 
