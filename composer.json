@@ -13,15 +13,15 @@
 	"require": {
 		"php": "^8.0",
 		"ext-json": "*",
-		"ergebnis/composer-normalize": "^2.14.0",
+		"ergebnis/composer-normalize": "^2.15.0",
 		"phpstan/extension-installer": "^1.1.0",
-		"phpstan/phpstan": "^0.12.89",
-		"phpstan/phpstan-deprecation-rules": "^0.12.6",
-		"phpstan/phpstan-doctrine": "^0.12.38",
-		"phpstan/phpstan-symfony": "^0.12.35"
+		"phpstan/phpstan": "^1.0.1",
+		"phpstan/phpstan-deprecation-rules": "^1.0.0",
+		"phpstan/phpstan-doctrine": "^1.0.1",
+		"phpstan/phpstan-symfony": "^1.0.0"
 	},
 	"require-dev": {
-		"friendsofphp/php-cs-fixer": "^3.0.0",
+		"friendsofphp/php-cs-fixer": "^3.2.1",
 		"roave/security-advisories": "dev-latest"
 	},
 	"config": {
