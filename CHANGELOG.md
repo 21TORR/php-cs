@@ -1,3 +1,9 @@
+4.0.4
+=====
+
+*	(improvement) Don't use deprecated PHPStan config.
+
+
 4.0.3
 =====
 
