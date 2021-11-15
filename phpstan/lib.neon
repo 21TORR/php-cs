@@ -8,14 +8,15 @@ parameters:
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
 
-    excludes_analyse:
-        - %currentWorkingDirectory%/app/DoctrineMigrations
-        - %currentWorkingDirectory%/node_modules
-        - %currentWorkingDirectory%/src/Migrations
-        - %currentWorkingDirectory%/tests
-        - %currentWorkingDirectory%/var
-        - %currentWorkingDirectory%/vendor
-        - %currentWorkingDirectory%/vendor-bin
+    excludePaths:
+        analyse:
+            - %currentWorkingDirectory%/vendor
+        analyseAndScan:
+            - %currentWorkingDirectory%/src/Migrations
+            - %currentWorkingDirectory%/node_modules
+            - %currentWorkingDirectory%/tests
+            - %currentWorkingDirectory%/var
+            - %currentWorkingDirectory%/vendor-bin
 
     ignoreErrors:
         - '#Symfony\\Component\\Config\\Definition\\Builder\\NodeDefinition::#'
