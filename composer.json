@@ -1,30 +1,35 @@
 {
 	"name": "21torr/php-cs",
-	"type": "lib",
 	"description": "Code style, encoded as rules for common tools.",
-	"homepage": "https://github.com/21TORR/php-cs",
 	"license": "BSD-3-Clause",
+	"type": "lib",
 	"authors": [
 		{
 			"name": "21TORR",
 			"homepage": "https://www.21torr.com/"
 		}
 	],
+	"homepage": "https://github.com/21TORR/php-cs",
 	"require": {
-		"php": "^8.0",
+		"php": ">=8.0",
 		"ext-json": "*",
-		"ergebnis/composer-normalize": "^2.15.0",
+		"ergebnis/composer-normalize": "^2.24.0",
 		"phpstan/extension-installer": "^1.1.0",
-		"phpstan/phpstan": "^1.1.2",
+		"phpstan/phpstan": "^1.4.10",
 		"phpstan/phpstan-deprecation-rules": "^1.0.0",
-		"phpstan/phpstan-doctrine": "^1.0.1",
-		"phpstan/phpstan-symfony": "^1.0.1"
+		"phpstan/phpstan-doctrine": "^1.2.11",
+		"phpstan/phpstan-symfony": "^1.1.7"
 	},
 	"require-dev": {
-		"friendsofphp/php-cs-fixer": "^3.2.1",
+		"friendsofphp/php-cs-fixer": "^3.7.0",
+		"kubawerlos/php-cs-fixer-custom-fixers": "^3.9.0",
 		"roave/security-advisories": "dev-latest"
 	},
 	"config": {
+		"allow-plugins": {
+			"phpstan/extension-installer": true,
+			"ergebnis/composer-normalize": true
+		},
 		"sort-packages": true
 	}
 }

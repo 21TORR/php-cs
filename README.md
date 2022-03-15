@@ -9,7 +9,7 @@ You should install this package using the [composer-bin-plugin]. So first add th
 ```bash
 composer req --dev bamarni/composer-bin-plugin
 composer bin test require --dev 21torr/php-cs
-composer bin cs-fixer require --dev friendsofphp/php-cs-fixer
+composer bin cs-fixer require --dev friendsofphp/php-cs-fixer php-cs-fixer-custom-fixers
 ```
 
 Afterwards add the following scripts to your `composer.json`, to always and automatically keep these dependencies up to date:
