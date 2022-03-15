@@ -1,5 +1,8 @@
 <?php
 
+use PhpCsFixerCustomFixers\Fixer as CustomFixer;
+use PhpCsFixerCustomFixers\Fixers as CustomFixers;
+
 $cwd = \getcwd();
 
 if (\is_dir("{$cwd}/src") && (\is_dir("{$cwd}/public") || \is_dir("{$cwd}/web")))
@@ -29,11 +32,11 @@ $finder = PhpCsFixer\Finder::create()
 
 $config = new PhpCsFixer\Config();
 
-return $config
+$config
 	->setIndent("\t")
 	->setFinder($finder)
 	->setRiskyAllowed(true)
-	->setRules(
+	->setRules(array_replace($config->getRules(),
 		[
 			"@PSR1" => true,
 			"align_multiline_comment" => [
@@ -46,8 +49,7 @@ return $config
 			"backtick_to_shell_exec" => true,
 			"binary_operator_spaces" => true,
 			"blank_line_after_namespace" => true,
-			"blank_line_after_opening_tag" => false,
-			// we want to allow `<?php declare(strict_types=1);`
+			"blank_line_after_opening_tag" => true,
 			"blank_line_before_statement" => [
 				"statements" => [
 					"case",
@@ -70,6 +72,7 @@ return $config
 //				"position_after_control_structures" => "next",
 //				"position_after_functions_and_oop_constructs" => "next",
 //			],
+			"braces" => false,
 			"cast_spaces" => [
 				"space" => "single",
 			],
@@ -268,4 +271,41 @@ return $config
 			"whitespace_after_comma_in_array" => true,
 			"yoda_style" => true,
 		]
-	);
+	));
+
+
+if (class_exists(CustomFixers::class))
+{
+	$config
+		->registerCustomFixers(new CustomFixers())
+		->setRules(array_replace($config->getRules(), [
+			CustomFixer\CommentSurroundedBySpacesFixer::name() => true,
+			CustomFixer\ConstructorEmptyBracesFixer::name() => true,
+			CustomFixer\DataProviderNameFixer::name() => [
+				"prefix" => "provide",
+				"suffix" => "",
+			],
+			CustomFixer\DataProviderReturnTypeFixer::name() => true,
+			CustomFixer\DataProviderStaticFixer::name() => true,
+			CustomFixer\DeclareAfterOpeningTagFixer::name() => true,
+			CustomFixer\MultilinePromotedPropertiesFixer::name() => true,
+			CustomFixer\NoDoctrineMigrationsGeneratedCommentFixer::name() => true,
+			CustomFixer\NoDuplicatedArrayKeyFixer::name() => true,
+			CustomFixer\NoDuplicatedImportsFixer::name() => true,
+			CustomFixer\NoImportFromGlobalNamespaceFixer::name() => true,
+			CustomFixer\PhpUnitNoUselessReturnFixer::name() => true,
+			CustomFixer\PhpdocNoSuperfluousParamFixer::name() => true,
+			CustomFixer\PhpdocParamOrderFixer::name() => true,
+			CustomFixer\PhpdocParamTypeFixer::name() => true,
+			CustomFixer\PhpdocSelfAccessorFixer::name() => true,
+			CustomFixer\PhpdocSingleLineVarFixer::name() => true,
+			CustomFixer\PhpdocTypesCommaSpacesFixer::name() => true,
+			CustomFixer\PhpdocVarAnnotationToAssertFixer::name() => true,
+			CustomFixer\PromotedConstructorPropertyFixer::name() => true,
+			CustomFixer\SingleSpaceAfterStatementFixer::name() => true,
+			CustomFixer\SingleSpaceBeforeStatementFixer::name() => true,
+			CustomFixer\StringableInterfaceFixer::name() => true,
+		]));
+}
+
+return $config;
