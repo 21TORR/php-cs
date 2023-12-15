@@ -1,3 +1,11 @@
+4.1.0
+=====
+
+* (feature) Add `staabm/phpstan-todo-by` by default.
+* (improvement) Bump dependencies.
+* (improvement) Require PHP 8.2+.
+
+
 4.0.4
 =====
 
