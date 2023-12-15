@@ -1,3 +1,10 @@
+4.1.0
+=====
+
+* (improvement) Bump dependencies.
+* (improvement) Require PHP 8.2+.
+
+
 4.0.4
 =====
 
